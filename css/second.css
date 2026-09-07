@@ -1,0 +1,90 @@
+*{
+    font-family: "Courier New";
+}
+#login{
+    color: brown;
+}
+#signup{
+    color: brown;
+}
+/* .btn{
+    background-color: rgb(0, 8, 239);
+    
+} */
+.btn:hover{
+    background-color: rgb(16, 196, 175);
+}
+/* #myid{
+    color: green;
+} */
+nav ul li a{
+    color: purple; 
+}
+div p{
+    color: green;
+}
+div p a{
+    color: red;
+}
+.post a{
+    color: purple;
+    background-color: rgb(127, 255, 255);
+}
+p+h3{
+    color: brown;
+    text-decoration: solid underline black;
+}
+.btn+button{
+    color: red;
+    /* text-decoration: underline solid yellow; */
+    background-color: cornflowerblue;
+}
+p+button{
+    background-color: aqua;
+}
+span>button{
+    text-decoration: underline solid black;
+}
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+
+h4{
+    color: rgb(132, 0, 255);
+}
+#greet{
+    color: rgb(25, 25, 238);
+}
+.myclass{
+    color:ghostwhite;
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(193, 0, 0);
+}
+button:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 242, 242);
+}
+h3:hover{
+    text-decoration: none;
+}
+.btn:active{
+    background-color: blue;
+    color: white;
+}
+/* pseudo class */
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+.post:nth-of-type(1n):hover{
+    background-color: wheat;
+}

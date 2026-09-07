@@ -1,0 +1,130 @@
+/* CSS --> Cascading Style Sheets */
+/* It is a language that is used to describe the style of a document */
+
+/* Basic Format of CSS
+selector{
+    property: value;
+} */
+
+/* h1{
+    color:blue
+} */
+
+/* How to include styles?
+Inline styles
+Internal syles
+all in index.html
+
+External Styles mean different css file and linked to html file */
+/* h1, p, button{
+    color: red;
+} */
+/* h1{
+    display: flex;
+    justify-content: center;
+} */
+
+/* Color Property
+used to set the color of foreground
+color: purple;
+color: #ffffff;
+color:rgb(255 255 255) */
+/* 
+Background color property
+used to set the color of background
+background-color: purple;
+background-color:#ffffff */
+
+/* Color Systems
+Named colors   color=black;
+Each browser recoginizes around 140 named colors.
+Eg - red, blue, oink, purple, magenta, teal etc */
+
+/* RGB
+Red green blue(0-255)    color=rgb(0,0,0)
+red is rgb(255,0,0)
+black is rgb(0,0,0)
+blue is rgb(0,0,255)
+green is rgb(0,255,0)
+yellow is rgb(255,255,0)
+ */
+/* 
+ Hexadecimal or Hex     color = #FFFFFF;
+ Letters: 1-9, A-F
+ color = #FF FF FF
+        R G B 
+    
+ */
+ /* Font-size unit in CSS
+Absolute -> px, pt, pc, cm, mm, in
+relative -> %, em, rem, ch, vh, vw + manymore */
+
+/* important
+To show the most specific thing in document */
+/* h3{
+    background-color: blue !important;
+} */
+
+/* Inhertance in CSS
+grandparent
+parent
+child */
+
+/* box model
+    height
+    width
+    border
+    padding
+    margin
+*/
+/* Display
+it sets whether an element is treated as a block or inline element and the layout used for its children.
+display: inline
+display: block
+display : inline-block (For inherit all inline and block properties)
+
+ */
+
+
+h1{
+    text-align: center;
+    text-decoration: overline red solid;
+    letter-spacing: 10px;
+    /* relative to parent element */
+}
+h3{
+    font-family: League spartan;
+    color: #ffa511;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 55px; 
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: teal underline double
+}
+
+h2{
+    color: orange;
+   text-align: end;
+   text-decoration: line-through violet dotted;
+}
+
+p{
+   text-align: justify;
+   border: solid;
+   font-weight: 600;
+   text-decoration: underline magenta wavy;
+   line-height: 2.5;
+   letter-spacing: normal;
+   /* font-family: 'Courier New', Courier, monospace; */
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+button{
+   text-decoration: underline black double;
+}
+
+
+
