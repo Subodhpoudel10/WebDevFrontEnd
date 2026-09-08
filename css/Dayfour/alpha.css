@@ -12,7 +12,7 @@ sets the opacity for the element
 transition: property name | duration | easing function | delay
 transition:2s ease-in-out 0.5s; */
 
-div{
+/* #opacity{
     height: 200px;
     width: 200px;
     background-color: #1fba00ff;
@@ -20,15 +20,141 @@ div{
     border-radius: 45%;
     margin: 0 auto;
     margin-top: 10px;
-    transition: margin-top 1s ease-in-out 0.5s ;
+    transition: margin-top 1s ease-in 0.5s ;
 }
-div:hover{
+#opacity:hover{
    margin-top: 400px;
+   transition: rotate(45deg); 
    background-color: wheat;
    border: 2px solid black;
    border-radius: 50%;
+} */
+/* 
+Box Shadow 
+it adds shadow effects around an element's frame.
+box-shadow: x-offset y-offset blurradius color; */
+
+#main{
+    margin-top: 100px;
+}
+#trans{
+    width: 200px;
+    height: 40px;
+    text-align: center ;
+    background-color: rgb(83, 83, 226);
+    margin: 100px;
+    border: 2px solid black;
+    /* transform: rotate(90deg); */
 }
 
+#trans:nth-of-type(2n){
+    background-color: yellow;
+}
+#trans:nth-of-type(3n){
+    background-color: wheat;
+}
+/* Transform */
+.item1{
+    transform: rotate(45deg);
+}
+.item2{
+    transform: scale(1.15);
+    /* transform: scaleX(1.5); */
+    /* transform: scale(2,0.5) */
+}
+.item3{
+    transform: translate(50px, 25px);
+    /* transform: translateY(100px); */
+    /* transform: translateX(50px); */
+}
+.item4{
+    transform: skew(30deg)
+}
+.item5{
+    transform: rotate(30deg) translate(150px) skew(30deg) scale(1.5);
+}
 
+/* div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px auto;
+    background-color:red;
+    box-shadow: 10px 10px 20px rgba(80, 101, 170, 0.853);
+} */
 
+/* div{
+    width: 400px;
+    height: 200px;
+    background-color: wheat;
+    margin: 10px auto;
+    background-image: url("../image/Know\ your\ why\ System\ \ Mood\ Response\ =\ Everything\ Celebrate\ Small\ Win\ No\ Perfect\ Time\ Loss\ =\ Successful\ Attempts\ \(7\).png");
+    background-size: cover;
+    color: white;
+} */
+/* 
+position: The postition CSS property set how an element is positioned in a document.
+The top, right, bottom, and left properties determine the final location of positioned element.
+static  relative absolute fixed */
 
+/* .card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px black;
+    transition: box-shadow 1s;
+}
+.desc{
+    padding: 0 2px 0 5px;
+}
+
+img{
+    width: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover{
+     box-shadow: 8px 8px 20px rgba(41, 180, 26, 0.768);
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+} 
+
+#relative {
+     background-color: yellow;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+#fixed{
+     background-color: yellow;
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    height: 3%;
+    width: 90%;
+    border-radius: 5px;
+}
