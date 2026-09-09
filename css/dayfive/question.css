@@ -1,0 +1,45 @@
+#container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-content: space-evenly; */
+    align-items: center;
+
+}
+
+#container .box {
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border:2px solid black ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#nav{
+    height: 50px;
+    width: 900px;
+    background-color: rgba(191, 98, 98, 0.222);
+    border: 2px green solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.option{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    margin-left:5px;
+
+}
