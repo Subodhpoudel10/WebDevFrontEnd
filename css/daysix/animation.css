@@ -1,0 +1,57 @@
+/* Css Animations
+TO animate CSS elements.
+@keyframe myname{
+    from {font-size: 20px;}
+    to{ font-size: 40px}
+} 
+    where to destination (from to)
+after that we have to place the animation properties to the class or id
+animation-name, duration, timing-function, delay, iteration-count, direction
+
+
+*/
+
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    /* animation-name: widthanimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+
+    animation: widthanimation 5s ease-in 0s infinite normal;
+}
+@keyframes widthanimation{
+    from{
+        width: 100px;
+        background-color: green;
+    }
+    to{
+        width: 500px;
+        background-color: wheat;
+        border-radius: 0 20px 20px 0;
+    }
+}
+
+@keyframes fontanimation {
+    from { 
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+
+@keyframes coloranimation{
+    from{
+        background-color: green;
+
+    }
+    to{
+        background-color: aqua;
+    }
+}
+

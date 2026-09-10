@@ -27,12 +27,13 @@
 #nav{
     height: 50px;
     width: 900px;
-    background-color: rgba(191, 98, 98, 0.222);
+    background-color: rgba(191, 98, 98, 0.279);
     border: 2px green solid;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
-    align-content: center;
+    flex-direction: row;
+
 
 }
 
@@ -41,5 +42,5 @@
     width: 80px;
     font-size: 24px;
     margin-left:5px;
-
+    margin-top: 10px;
 }
