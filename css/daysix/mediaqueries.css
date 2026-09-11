@@ -54,9 +54,36 @@ h1{
     }
 } */
 
+/* Z-index
+it decides the stack level of elements
+Overlapping elements with a larger z-index cover those with a smaller one.
+z-index: auto(0)
+z-index: 1/2/..
+z-index: -1/-2/.. */
 
 @media (orientation: landscape){
     h1{
         background-color: forestgreen;
     }
+}
+
+
+.item{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+.item1{
+    background-color: rgb(165, 206, 165);
+    position: relative;
+    z-index: 1;
+}
+.item2{
+    background-color: rgb(222, 175, 175);
+    position: relative;
+    bottom: 50px;
+    z-index: 0;
+}
+.item3{
+    background-color: rgb(135, 135, 198);
 }

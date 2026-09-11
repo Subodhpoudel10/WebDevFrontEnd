@@ -138,23 +138,25 @@ div{
 } 
 
 #relative {
-     background-color: yellow;
+    background-color: yellow;
+    /* div bata calculate garcha tei bata */
     position: relative;
-    top: 50px;
+    top: 40px;
     left: 100px;
 }
 #absolute{
     background-color: yellow;
     position: absolute;
-    top: 400px;
-    left: 500px;
+    /* Top mathi bata root bata nai calculate garcha */
+    top: 570px;
+    left: 80px;
 }
 #fixed{
      background-color: yellow;
     position: fixed;
-    top: 5px;
+    top: 30px;
     left: 20px;
-    height: 3%;
+    height: 5%;
     width: 90%;
     border-radius: 5px;
 }
