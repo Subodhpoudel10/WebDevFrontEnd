@@ -7,8 +7,15 @@ TO animate CSS elements.
     where to destination (from to)
 after that we have to place the animation properties to the class or id
 animation-name, duration, timing-function, delay, iteration-count, direction
+ 
+animation: name duration function delay iterationcount normal;
 
-
+% in animation
+@keyframe myname{
+    0%{}
+    50%{}
+    100%{}
+} 
 */
 
 .box{
@@ -23,6 +30,7 @@ animation-name, duration, timing-function, delay, iteration-count, direction
     animation-direction: normal; */
 
     animation: widthanimation 5s ease-in 0s infinite normal;
+    /* animation: widthanimation 3s ease-in-out 0.5s 3 normal; */
 }
 @keyframes widthanimation{
     from{
@@ -34,7 +42,7 @@ animation-name, duration, timing-function, delay, iteration-count, direction
         background-color: wheat;
         border-radius: 0 20px 20px 0;
     }
-}
+}   
 
 @keyframes fontanimation {
     from { 
@@ -55,3 +63,81 @@ animation-name, duration, timing-function, delay, iteration-count, direction
     }
 }
 
+.box1{
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    animation: rolling 5s ease-in-out 0s infinite normal;
+}
+@keyframes rolling{
+    0%{
+        background-color: yellow;
+        /* margin-left: 5px; */
+    }
+    25%{
+        background-color: rgb(89, 0, 255);
+        margin-left: 200px;
+    }
+    50%{
+        background-color: aqua;
+        margin-left: 300px;
+    }
+    100%{
+        background-color: azure;
+        margin-left: 400px;
+    }
+}
+
+.light{
+    width: 200px;
+    height: 500px;
+    background-color: wheat;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    /* background-color: white; */
+    border-radius: 50%;
+    /* animation: trafficlight ease-in-out 0s infinite normal; */
+}
+
+.light1{
+    animation: trafficlight 5s ease-in 0s 1 normal;
+}
+.light2{
+       animation: mid 5s ease-in 5s 1 normal;
+
+} 
+.light3{
+        animation:last 5s ease-in 10s 1 normal;
+
+}
+
+@keyframes trafficlight{
+    0%{
+        background-color: green;
+        /* transition-duration: 10s; */
+    }
+   
+}
+@keyframes mid {
+    0%{
+        background-color: red;
+        /* transition-duration: 3s; */
+    }
+}
+@keyframes last {
+     0%{
+        background-color: yellow;
+        /* transition-duration:3s; */
+    }
+}

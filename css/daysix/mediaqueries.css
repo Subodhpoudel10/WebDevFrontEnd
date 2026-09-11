@@ -1,0 +1,62 @@
+/* Media Queries
+Help create a responsive website
+
+media features - width (of viewport)
+@media(width:400px){
+    div{
+        background-color: red;
+}
+}
+
+media Orientation: lanscape
+ @media (orientation: landscape)
+ {
+ h1{
+ background-color: aqua;
+}
+}
+
+
+
+*/
+
+h1{
+    background-color: wheat;
+    border: 2px solid black;
+}
+
+/* @media (width:400px) {
+    h1{
+        background-color: red;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+    }
+} */
+/* @media (min-width: 800px) {
+    h1{
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        background-color: aqua;
+    }
+} */
+
+/* @media (min-width: 200px) and (max-width: 400px){
+    h1{
+        background-color: blueviolet;
+    }
+} */
+
+
+@media (orientation: landscape){
+    h1{
+        background-color: forestgreen;
+    }
+}
