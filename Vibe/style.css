@@ -1,0 +1,149 @@
+/* 1. Global Reset (Always start with this) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Header Layout */
+.site-header {
+  display: flex;
+  justify-content: space-between; /* Spaces out Logo, Nav, and Button */
+  align-items: center; /* Vertically centers them */
+  padding: 1.5rem 5%; /* 5% padding keeps it fluid on different screens */
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. Logo Styling */
+.brand-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.brand-logo span {
+  color: #e74c3c; /* Gives a pop of color to the second half of the logo */
+}
+
+/* 4. Navigation List Styling */
+.nav-list {
+  display: flex;
+  list-style: none; /* Removes the default bullet points */
+  gap: 2rem; /* Creates exact spacing between links */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #34495e;
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-list a:hover {
+  color: #e74c3c;
+}
+
+/* 5. Call to Action Button */
+.btn-primary {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px; /* Pill shape */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* 6. Level 2 Requirement: Basic Mobile Responsiveness */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .nav-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 1. Hero Layout and Background Magic */
+.hero {
+  /* We use vh (viewport height). 80vh means it will take up 80% of the screen's height */
+  min-height: 80vh; 
+  
+  /* THE MENTOR TRICK: We use a linear-gradient to create a dark, semi-transparent overlay, 
+     and layer it right on top of a background image from Unsplash. */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  
+  /* Ensure the image covers the whole section without stretching */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Flexbox to perfectly center the text vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Add padding so text doesn't touch the edges on small screens */
+  padding: 0 20px;
+}
+
+/* 2. Hero Text Styling */
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  color: #ffffff; /* White text pops against the dark overlay */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Helps text readability */
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  color: #e0e0e0; /* Slightly off-white for visual hierarchy */
+}
+
+/* 3. A slightly larger version of our previous button */
+.btn-large {
+  display: inline-block; /* Essential so padding/margins work on links */
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+}
+
+/* 4. Level 2 Requirement: Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem; /* Shrink the massive text on phones */
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    min-height: 60vh; /* Don't take up as much screen space on mobile */
+  }
+}
