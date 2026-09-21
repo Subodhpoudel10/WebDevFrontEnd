@@ -1,46 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Agency</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="site-header">
-  <!-- The Logo -->
-  <a href="#" class="brand-logo">
-    Atlas<span>Treks</span>
-  </a>
+  <header class="site-header">
+    <!-- The Logo -->
+    <a href="#" class="brand-logo">
+      Atlas<span>Treks</span>
+    </a>
 
-  <!-- The Navigation Links -->
-  <nav class="main-nav">
-    <ul class="nav-list">
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#tours">Packages</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- The Navigation Links -->
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#tours">Packages</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Call to Action (CTA) Button -->
-  <a href="#book" class="btn-primary">Book a Trip</a>
-</header>
-<!-- Main Content Area Starts Here -->
-<main>
-  
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Discover Your Next Great Adventure</h1>
-      <p>Explore the most breathtaking destinations on earth with our curated travel packages.</p>
-      <!-- We reuse the btn-primary class here! -->
-      <a href="#destinations" class="btn-primary btn-large">Explore Packages</a>
-    </div>
-  </section>
+    <!-- Call to Action (CTA) Button -->
+    <a href="#book" class="btn-primary">Book a Trip</a>
+  </header>
+  <!-- Main Content Area Starts Here -->
+  <main>
 
-  <!-- Future sections will go here -->
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>Discover Your Next Great Adventure</h1>
+        <p>Explore the most breathtaking destinations on earth with our curated travel packages.</p>
+        <!-- We reuse the btn-primary class here! -->
+        <a href="#destinations" class="btn-primary btn-large">Explore Packages</a>
+      </div>
+    </section>
 
-</main>
+    <!-- Popular Tours Section -->
+    <section class="popular-tours" id="tours">
+      <!-- We wrap the content in a container to constrain its maximum width -->
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Popular Tours</h2>
+          <p>Discover the heart of Nepal through our top-rated experiences.</p>
+        </div>
+
+        <!-- The Grid Container for our Cards -->
+        <div class="tours-grid">
+
+          <!-- Card 1: Everest -->
+          <article class="tour-card">
+            <div class="card-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Mount Everest Base Camp">
+              <span class="badge">Bestseller</span>
+            </div>
+            <div class="card-content">
+              <h3>Everest Base Camp</h3>
+              <p>Trek to the lap of the world's highest peak. A thrilling 14-day adventure through the Khumbu valley.
+              </p>
+              <div class="card-footer">
+                <span class="price">$1,200</span>
+                <a href="#" class="btn-secondary">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Pokhara -->
+          <article class="tour-card">
+            <div class="card-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1541359927273-d8c178dd965e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Phewa Lake in Pokhara">
+            </div>
+            <div class="card-content">
+              <h3>Pokhara Retreat</h3>
+              <p>Relax by Phewa Lake and enjoy paragliding with panoramic views of the Annapurna mountain range.</p>
+              <div class="card-footer">
+                <span class="price">$450</span>
+                <a href="#" class="btn-secondary">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Chitwan -->
+          <article class="tour-card">
+            <div class="card-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1574352055615-5e60d25bb53f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="One-horned Rhino in Chitwan">
+            </div>
+            <div class="card-content">
+              <h3>Chitwan Jungle Safari</h3>
+              <p>Explore the dense sub-tropical jungles. Spot rare one-horned rhinos and elusive Bengal tigers.</p>
+              <div class="card-footer">
+                <span class="price">$300</span>
+                <a href="#" class="btn-secondary">View Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Future sections will go here -->
+
+  </main>
 </body>
+
 </html>

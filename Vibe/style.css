@@ -147,3 +147,138 @@ body {
     min-height: 60vh; /* Don't take up as much screen space on mobile */
   }
 }
+
+/* --- 1. Section & Gradient Background --- */
+.popular-tours {
+  padding: 5rem 5%; /* Generous padding gives the section room to breathe */
+  
+  /* The Gradient Background you requested: A soft, modern blue-to-gray transition */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+  max-width: 1200px; /* Prevents the grid from stretching too wide on massive monitors */
+  margin: 0 auto;    /* Centers the container horizontally */
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- 2. The Grid Magic --- */
+.tours-grid {
+  display: grid;
+  /* THE MENTOR TRICK: This single line creates a responsive grid. 
+     It tells the browser: "Make columns at least 300px wide. 
+     If there's extra space, stretch them (1fr). If they don't fit, wrap them to the next line." */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Creates exact 2rem spacing between all cards natively */
+}
+
+/* --- 3. The Card Base --- */
+.tour-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  
+  /* THE CRITICAL FIX: Forces the square image inside to respect the 12px rounded corners */
+  overflow: hidden; 
+  
+  /* Adds a soft shadow to lift the card off the gradient background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  
+  /* Smooth transition for when we hover over the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Lifts the card up slightly */
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- 4. Card Image Styling --- */
+.card-image-wrapper {
+  position: relative; /* Allows us to absolutely position the 'Bestseller' badge inside it */
+  height: 200px;      /* Fixed height ensures all card images line up perfectly */
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  
+  /* object-fit acts like background-size: cover, but for <img> tags. 
+     It prevents the image from squishing or stretching. */
+  object-fit: cover; 
+}
+
+/* The Bestseller Badge */
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* --- 5. Card Content & Footer --- */
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* This ensures the footer gets pushed to the bottom if one card has less text than another */
+  height: calc(100% - 200px); 
+}
+
+.card-content h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Pushes the card-footer to the bottom */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* Puts price on the left, button on the right */
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #eee; /* Creates a clean dividing line */
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60; /* Green for money/price */
+}
+
+/* Small, secondary button for the cards */
+.btn-secondary {
+  background-color: transparent;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #e74c3c;
+  color: white;
+}
