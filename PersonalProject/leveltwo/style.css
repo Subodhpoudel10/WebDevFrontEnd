@@ -32,12 +32,14 @@ body{
     gap: 2rem;
     font-size: 1.3rem;
 }
+
 .nav-list a{
     text-decoration: none;
     color: #004c75;
     font-weight: 500;
     transition: color 0.2s ease;
 }
+
 .nav-list a:hover{
    color: #84c064;
 }
@@ -256,3 +258,139 @@ body{
     padding-top: 1rem;
     border-top: 1px solid #eee;
 }
+
+.price{
+    color: green;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-more{
+    background-color: transparent;
+    text-decoration: none;
+    color: red;
+    padding: 0.5rem 1rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-more:hover{
+    background-color: red;
+    color: white;
+}
+
+.about-section{
+    padding: 6rem 5%;
+    background-color: white;
+}
+
+.about-layout{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-image-wrapper, .about-content{
+    flex: 1;
+}
+
+.about-image-wrapper{
+    position: relative;
+}
+
+.about-image{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.experience-badge{
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #004c75;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #84c064;
+    /* font-weight: bold; */
+    text-align: center;
+    /* line-height: 1.5; */
+}
+
+.experience-badge .years {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    line-height: 1;
+}
+
+.experience-badge .text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.section-subtitle{
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.about-content h2{
+    font-size: 2.5rem;
+    color: #004c75;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.about-content p{
+    color: #131d0e; 
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.feature-list{
+    list-style: none;
+    margin-bottom: 2.5rem;
+}
+
+.feature-list li{
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #131d0e;
+    line-height: 1.5;
+}
+
+.feature-list li::before{
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .about-layout{
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .experience-badge{
+        right: 20px;
+        bottom: -20px;
+    }
+}
+
+/* .about-content{
+    display: flex;
+    flex-direction: column;
+} */
+

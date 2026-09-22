@@ -1,0 +1,49 @@
+/* Card1 start  */
+.product {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+/* card1 end */
+/* image1start */
+.image-box {
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+    /* overflow: visible; */
+}
+
+.image-box:hover img {
+    transform: scale(1.08);
+}
+/* image1end */
+
+/* second card start  */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    /* flex: 1 1 250px; */
+        flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+/* second card end  */
